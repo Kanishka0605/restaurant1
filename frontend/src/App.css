@@ -864,7 +864,9 @@ footer .container .banner .right {
 }
 .reservation .container {
   max-width: 1500px;
-  min-width: 1500px;
+  /* Make container responsive and centered; remove fixed min-width that can push content off-screen */
+  margin: 0 auto;
+  width: 100%;
   display: flex;
 }
 .reservation .container .banner {

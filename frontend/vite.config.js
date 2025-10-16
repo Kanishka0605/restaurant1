@@ -11,11 +11,7 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
       },
-      '/reservation': {
-        target: 'http://localhost:4000',
-        changeOrigin: true,
-        secure: false,
-      }
+      // removed '/reservation' proxy to avoid proxying static asset requests like '/reservation.png'
     }
   }
 })
