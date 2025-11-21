@@ -9,34 +9,31 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.footer .banner {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 0;
+  gap: 12px;
 }
-.footer .banner .left {
-  font-weight: 500;
-  font-size: 16px; /* slightly smaller heading */
+.footer-inner .left h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
 }
-.footer .banner .right p {
+.footer-inner .left p,
+.footer-inner .right p {
   margin: 0;
   font-size: 13px;
-  font-weight: 300;
+  color: #444;
+}
+.footer-inner .right {
+  text-align: right;
 }
 /* Responsive: stack on small screens */
 @media (max-width: 600px) {
   .footer .container {
-    gap: 6px;
-  }
-  .footer .banner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
   }
-  .footer .banner .left {
-    font-size: 15px;
+  .footer-inner .right {
+    text-align: left;
   }
 }
